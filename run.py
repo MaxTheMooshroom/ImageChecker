@@ -1,13 +1,7 @@
 from flask import Flask, render_template, request
+import predictor as model
 
 APP = Flask(__name__)
-
-class Model:
-    def predict(self, img):
-        return True
-
-model = Model()
-
 
 @APP.route('/')
 def index():
